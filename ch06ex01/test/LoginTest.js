@@ -3,10 +3,7 @@ const { Builder } = require("selenium-webdriver");
 
 require("dotenv").config();
 
-const { USERNAME, PASSWORD } = process.env;
-
-// const USERNAME = "tomsmith";
-// const PASSWORD = "SuperSecretPassword!";
+const { USERNAME, PASSWORD, BROWSER = "firefox" } = process.env;
 
 describe("Login", function () {
   this.timeout(ms("10s"));
@@ -16,7 +13,7 @@ describe("Login", function () {
     console.time("RUN TEST");
     console.info("\nBEFORE EACH");
     console.time("\tlaunch browser");
-    driver = await new Builder().forBrowser("firefox").build();
+    driver = await new Builder().forBrowser(BROWSER).build();
     console.timeEnd("\tlaunch browser");
   });
 
