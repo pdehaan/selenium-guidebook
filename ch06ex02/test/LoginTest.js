@@ -1,3 +1,4 @@
+// For usage info, see https://nodejs.org/api/assert.html
 const assert = require("assert");
 
 const ms = require("ms");
