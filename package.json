@@ -1,0 +1,24 @@
+{
+  "name": "selenium-guidebook",
+  "version": "1.0.0",
+  "description": "To buy the excellent book, go to <https://seleniumguidebook.com/>.",
+  "scripts": {
+    "lint": "eslint .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pdehaan/selenium-guidebook.git"
+  },
+  "keywords": [],
+  "author": "Peter deHaan <peter@deseloper.com> (https://about.me/peterdehaan)",
+  "license": "MPL-2.0",
+  "bugs": {
+    "url": "https://github.com/pdehaan/selenium-guidebook/issues"
+  },
+  "homepage": "https://github.com/pdehaan/selenium-guidebook#readme",
+  "devDependencies": {
+    "eslint": "^7.8.1",
+    "eslint-plugin-mocha": "^8.0.0"
+  }
+}
